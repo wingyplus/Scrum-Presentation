@@ -24,6 +24,11 @@
 			.highlight {
 				color: red;
 			}
+
+			#invest {
+				margin-left: 60px;
+				padding-left: 20px;
+			}
 		</style>
 	</head>	
 	<body class="deck-container">
@@ -61,9 +66,20 @@
 			<li class="slide">นำเอา User Story (Product Backlog) มาแยกเป็นกลุ่ม (Sprint Backlog)</li>
 		</section>
 
+		<section class="slide" id="waterfall-process">
+			<h2>กระบวนการใน Waterfall</h2>
+			<img src="images/waterfall-model-diagram.jpg"/>
+		</section>
+
 		<section class="slide" id="scrum-process">
 			<h2>กระบวนการใน Scrum</h2>
 			<img src="images/scrum-sprint.png"/>
+		</section>
+
+		<section class="slide" id="scrum-benefit">
+			<h2>ประโยชน์ของ Scrum</h2>
+			<li class="slide">จะมีของส่งให้ลูกค้าได้ทุกรอบการทำงาน (Sprint)</li>
+			<li class="slide">ผลิตภัณฑ์ที่ได้จาก Scrum จะมีคุณภาพ</li>
 		</section>
 
 		<section class="slide" id="scrum-roles">
@@ -76,8 +92,10 @@
 		<section class="slide" id="scrum-roles-productowner">
 			<h2>Product Owner</h2>
 			<li class="slide">ลูกค้า</li>
+            <li class="slide">เป็นคนอธิบายรายละเอียดของสินค้า</li>
 			<li class="slide">เป็นคนตัดสินใจเรื่องความสำคัญของ Product Backlog</li>
 			<li class="slide">สามารถแก้ไขหรือปรับเปลี่ยน Product Backlog ได้<strong class="highlight">เพียงคนเดียวเท่านั้น</strong>
+            <li class="slide">ตรวจงานในต่ล่ะ Sprint</li>
 		</section>
 
 		<section class="slide" id="scrum-roles-scrummaster">
@@ -86,24 +104,93 @@
 			<li class="slide">รับผิดชอบกระบวนการเพื่อให้เป็นไปตามเกณฑ์ที่กำหนด</li>
 			<li class="slide">ขจัดอุปสรรคที่คอยขวางกั้นใน Team</li>
 		</section>
+
+		<section class="slide" id="scrum-roles-team">
+			<h2>Team</h2>
+            <li class="slide">แปลง Product Backlog ให้กลายเป็นผลิตภัณฑ์</li>
+			<li class="slide">ไม่มีการแบ่งแยกหน้าที่ (ถือว่าเป็นทีมพัฒนา)</li>
+			<li class="slide">ทำงานเพื่อให้บรรลุเป้าหมายใน Sprint</li>
+			<li class="slide">จัดการกันเองภายในทีม (Self Management)</li>
+			<li class="slide">review ในผลงานแต่ล่ะ Sprint ให้กับ Product Owner</li>
+		</section>
+
+		<section class="slide" id="scrum-productbacklog">
+			<h2>Product Backlog</h2>
+			<blockquote>
+				ในฐานะ ...,
+				ฉันอยากให้ ...,
+				เหตุผลคือ ...,
+			</blockquote>
+		</section>
+
+		<!-- Show Redmine Backlog -->
+
+		<section class="slide" id="scrum-invest">
+			<h2>การทำ Product Backlog</h2>
+			<li class="slide">
+				<p>จะต้องมี I.N.V.E.S.T</p>
+				<ol id="invest">
+					<li><u class="highlight">I</u>ndependent</li>
+					<li><u class="highlight">N</u>egotiable</li>
+					<li><u class="highlight">V</u>aluable</li>
+					<li><u class="highlight">E</u>stimable</li>
+					<li><u class="highlight">S</u>mall</li>
+					<li><u class="highlight">T</u>estable</li>
+				</ol>
+			</li>
+		</section>
+
+		<section class="slide" id="scrum-backlogestimation">
+			<h2>การประเมิน Product Backlog</h2>
+			<li class="slide">ประเมินความสำคัญในแต่ล่ะ Product Backlog</li>
+			<li class="slide">ใช้ Poker Planning Card</li>
+			<li class="slide">เป็นสิ่งยืนยันว่าทุกคนเข้าใจตรงกัน</li>
+		</section>
+
+		<!-- Redmine fill estimation to backlog -->
+
+		<section class="slide" id="scrum-sprintbacklog">
+			<h2>Sprint Backlog</h2>
+			<li class="slide">Product Owner จะเป็นผู้จัด</li>
+			<li class="slide">จะมีความยาวประมาณ 2-4 อาทิตย์</li>
+		</section>
+
+		<!-- Redmine Sprint Backlog -->
+
+		<section class="slide" id="scrum-burndownchart">
+			<h2>Burndown Chart</h2>
+			<li class="slide">ดูความคืบหน้าในแต่ล่ะ Sprint</li>
+		</section>
+
+		<!-- Redmine Burdown Chart -->
+
+		<section class="slide" id="scrum-task">
+			<h2>Task</h2>
+			<li class="slide">Sprint Backlog ที่แตกออกมา</li>
+			<li class="slide">กำหนดเป็นชั่วโมงในแต่ล่ะ Task</li>
+			<li class="slide">ควรจะแบ่งให้งานเสร็จได้ภายใน 1 วัน</li>
+		</section>
+
+		<!-- Redmine task board -->
+
+		<section class="slide" id="scrum-meeting">
+			<h2>การประชุมใน Scrum</h2>
+			<li class="slide">ประชุมวางแผน Release (Release Planning Meeting)</li>
+			<li class="slide">ประชุมวางแผน Sprint (Sprint Planning Meeting)</li>
+			<li class="slide">ประชุมตรวจงาน (Sprint Review)</li>
+			<li class="slide">ประชุมทบทวน Sprint ย้อนหลัง (Sprint Retrospective)</li>
+		</section>
+
 		<!-- end slide presentation -->
 
 		<!-- navigation -->
 		<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
 		<a href="#" class="deck-next-link" title="Next">&#8594;</a>
 
-		<p class="deck-status">
-			<span class="deck-status-current"></span>
-			/
-			<span class="deck-status-total"></span>
-		</p>
-
 		<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
 
-		<!-- add jQuery plugin from online -->
-		<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
 		<!-- if link online has broken get it offline -->
-		<script>window.jQuery || document.write('<script src="js/jquery-1.7.min.js"><\/script>')</script>
+		<script src="js/jquery-1.7.min.js"></script>
 
 		<!-- add core and extensions -->
 		<script type="text/javascript" src="js/deck.core.js"></script>
