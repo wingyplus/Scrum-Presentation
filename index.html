@@ -20,16 +20,6 @@
 		<link rel="stylesheet" href="css/fade.css">
 
 		<script src="js/modernizr.custom.js"></script>
-		<style type="text/css">
-			.highlight {
-				color: red;
-			}
-
-			#invest {
-				margin-left: 60px;
-				padding-left: 20px;
-			}
-		</style>
 	</head>	
 	<body class="deck-container">
 
@@ -41,11 +31,13 @@
 		<section class="slide" id="what-agile">
 			<h2>Agile คืออะไร</h2>
 			<p class="slide">กระบวนการพัฒนาซอฟต์แวร์(หรืออย่างอื่น)โดยเน้นที่</p>
-			<li class="slide">บุคคลและการติดต่อ <strong class="highlight">มากกว่า</strong> กระบวนการสื่อสารและเครื่องมือ</li>
-			<li class="slide">ซอฟต์แวร์ที่ทำงานได้ <strong class="highlight">มากกว่า</strong> เอกสารที่ละเอียด</li>
-			<li class="slide">ความร่วมมือของลูกค้า <strong class="highlight">มากกว่า</strong> การเจรจาด้วยสัญญา</li>
-			<li class="slide">การตอบสนองต่อการเปลี่ยนแปลง <strong class="highlight">มากกว่า</strong> การทำตามแผนงาน</li>
-			</li>
+			<div class="sub-topic">
+				<li class="slide">บุคคลและการติดต่อ <strong class="highlight">มากกว่า</strong> กระบวนการสื่อสารและเครื่องมือ</li>
+				<li class="slide">ซอฟต์แวร์ที่ทำงานได้ <strong class="highlight">มากกว่า</strong> เอกสารที่ละเอียด</li>
+				<li class="slide">ความร่วมมือของลูกค้า <strong class="highlight">มากกว่า</strong> การเจรจาด้วยสัญญา</li>
+				<li class="slide">การตอบสนองต่อการเปลี่ยนแปลง <strong class="highlight">มากกว่า</strong> การทำตามแผนงาน</li>
+				</li>
+			</div>
 			<blockquote class="slide" style="margin: 10px">
 				การสร้างซอฟต์แวร์หรืองานที่ไม่ได้คุณภาพไม่ตรงตามที่ลูกค้าต้องการ
 			</blockquote>
@@ -95,7 +87,7 @@
 			<li class="slide">ลูกค้า</li>
             <li class="slide">เป็นคนอธิบายรายละเอียดของสินค้า</li>
 			<li class="slide">เป็นคนตัดสินใจเรื่องความสำคัญของ Product Backlog</li>
-			<li class="slide">สามารถแก้ไขหรือปรับเปลี่ยน Product Backlog ได้<strong class="highlight">เพียงคนเดียวเท่านั้น</strong>
+			<li class="slide">สามารถแก้ไขหรือปรับเปลี่ยน Product Backlog ได้<strong class="highlight">เพียงคนเดียวเท่านั้น</strong></li>
             <li class="slide">ตรวจงานในต่ล่ะ Sprint</li>
 		</section>
 
@@ -115,6 +107,13 @@
 			<li class="slide">review ในผลงานแต่ล่ะ Sprint ให้กับ Product Owner</li>
 		</section>
 
+		<section class="slide" id="scrum-tools">
+			<h2>Scrum Tools</h2>
+			<li>Redmine</li>
+			<li>Redmine Backlogs</li>
+			<li>Git</li>
+		</section>
+
 		<section class="slide" id="scrum-productbacklog">
 			<h2>Product Backlog</h2>
 			<blockquote>
@@ -130,7 +129,7 @@
 			<h2>การทำ Product Backlog</h2>
 			<li class="slide">
 				<p>จะต้องมี I.N.V.E.S.T</p>
-				<ol id="invest">
+				<ol class="sub-topic">
 					<li><u class="highlight">I</u>ndependent</li>
 					<li><u class="highlight">N</u>egotiable</li>
 					<li><u class="highlight">V</u>aluable</li>
@@ -152,8 +151,8 @@
 
 		<section class="slide" id="scrum-sprintbacklog">
 			<h2>Sprint Backlog</h2>
-			<li class="slide">Product Owner จะเป็นผู้จัด</li>
 			<li class="slide">จะมีความยาวประมาณ 2-4 อาทิตย์</li>
+			<li class="slide">ประเมินความเร็วในการพัฒนาเพื่อนำไปประเมิน Sprint ต่อไป</li>
 		</section>
 
 		<!-- Redmine Sprint Backlog -->
